@@ -5,6 +5,88 @@
     --main-color1: #2B417A;
 }
 
-#wrapper > .main {
+{ /* HTML STUFF */
+html {
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+
+    box-sizing: border-box;
+
+    font-size: 15pt;
+}
+
+    @media screen and (max-width: 1680px) {
+
+        html {
+            font-size: 12pt;
+        }
+
+    }
+
+    @media screen and (max-width: 1280px) {
+
+        html {
+            font-size: 11pt;
+        }
+
+    }
+
+    @media screen and (max-width: 980px) {
+
+        html {
+            font-size: 12pt;
+        }
+
+    }
+
+    @media screen and (max-width: 736px) {
+
+        html {
+            font-size: 11pt;
+        }
+
+    }
+
+    @media screen and (max-width: 360px) {
+
+        html {
+            font-size: 10pt;
+        }
+
+    }
+}
+
+#wrapper > .main > #header {
     background-color: blue;
+}
+
+/* HEADER */
+
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4.5rem;
+    line-height: 3.25rem;
+    background-color: #ffffff;
+    box-shadow: 0 0 0.5rem 0 rgba(0, 0, 0, 0.125);
+    cursor: default;
+    z-index: 10000;
+}
+
+#header a {
+    display: block;
+    height: inherit;
+    line-height: inherit;
+    border-bottom: 0;
+}
+
+#header > nav {
+    position: absolute;
+    right: 0;
 }

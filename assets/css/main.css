@@ -3219,7 +3219,7 @@ input, select, textarea {
 		top: 0;
 		left: 0;
 		width: 100%;
-		height: 3.25rem;
+		height: 4.5rem;
 		line-height: 3.25rem;
 		background-color: #ffffff;
 		box-shadow: 0 0 0.5rem 0 rgba(0, 0, 0, 0.125);
@@ -3237,6 +3237,7 @@ input, select, textarea {
 		#header > .logo {
 			position: absolute;
 			left: 1rem;
+			margin: 1rem;
 		}
 
 			#header > .logo strong {
@@ -3492,6 +3493,24 @@ input, select, textarea {
 		}
 
 		#banner video {
+			-moz-object-fit: cover;
+			-webkit-object-fit: cover;
+			-ms-object-fit: cover;
+			object-fit: cover;
+			-moz-object-position: center;
+			-webkit-object-position: center;
+			-ms-object-position: center;
+			object-position: center;
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100vw;
+			height: 100vh;
+			overflow: hidden;
+			z-index: -1;
+		}
+
+		#banner img {
 			-moz-object-fit: cover;
 			-webkit-object-fit: cover;
 			-ms-object-fit: cover;
